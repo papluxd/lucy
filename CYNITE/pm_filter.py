@@ -216,6 +216,7 @@ async def advantage_spoll_choker(bot, query):
             reply_markup = InlineKeyboardMarkup(btn)
             k = await query.message.edit('<b>𝐎𝐩𝐬 𝐌𝐨𝐯𝐢𝐞 𝐍𝐨𝐭 𝐟𝐨𝐮𝐧𝐝 😳 ! \n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐥𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 👇\n\nKgf 2 ✅\nKgf 2 hindi ✅\nKgf 2022 ✅</b>')
             await query.message.edit_reply_markup(reply_markup)
+            await bot.send_message(chat_id=-1001949274353, f'<b>SIR THIS MOVIE IS NOT FOUND IN MY DATABASE\n\nMOVIE NAME : {movie}</b>')
             await asyncio.sleep(30)
             await k.delete()
 
